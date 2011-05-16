@@ -28,3 +28,13 @@ Usage:
 
 Options:
 -------
+
+* controller (string : 'ul') -- controller element selector
+* contents (string : 'div') -- contents element selector
+* controllerClass (string : '') -- class name to add controller
+
+Method:
+-------
+
+* prev() -- go to previous content
+* next() -- go to next content

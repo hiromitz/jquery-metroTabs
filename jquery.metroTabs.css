@@ -9,3 +9,36 @@
  * Author: hiromitz ( http://github.com/hiromitz )
  * 
  */
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+.metro-controller {
+	margin: 0; padding: 0;
+	list-style: none;
+	display: block;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+.metro-lis {
+	opacity: .5;
+	font-size: 2em;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0;
+    vertical-align: top;
+}
+.metro-lis-current {
+	opacity: 1;
+}
+
+
+/* >> The Magnificent CLEARFIX << */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }

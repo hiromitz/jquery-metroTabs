@@ -5,9 +5,42 @@
 <title>Demo | MetroTabs - plugin for jQuery</title>
 <link rel="stylesheet" href="../jquery.metroTabs.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <style type="text/css" media="screen">
+	html, body {
+		font: 14px/1.6;
+	}
 	#container {
 		width: 600px;
 		margin: 0 auto;
+	}
+	h1 {
+		color: #EB1691;
+	}
+	a.prev,
+	a.next {
+		display: inline-block;
+		background: #EB1691;
+		color: #fff;
+		font: bold 20px/1 'Arial';
+		padding: 10px;
+		width: 17px;
+		text-align: center;
+		-moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+	a.prev:hover,
+	a.next:hover {
+		background: #333;
+	}
+	.prev {
+		float: left;
+	}
+	.next {
+		float: right;
+	}
+	
+	.controller a {
+		color: #EB1691;
 	}
 </style>
 </head>
@@ -15,27 +48,50 @@
 <div id="container">
 	<h1>MetroTabs - plugin for jQuery</h1>
 	<p>Tabs plugin for jQuery like Metro UI.</p>
+	<div class="clearfix">
+		<a class="prev" href="#">&lt;</a>
+		<a class="next" href="#">&gt;</a>
+	</div>
+	<hr />
 	<div id="tabs">
         <ul>
-            <li><a href="#tabs-1">Nunc tincidunt</a></li>
-            <li><a href="#tabs-2">Proin dolor</a></li>
-            <li><a href="#tabs-3">Aenean lacinia</a></li>
+            <li><a href="#tabs-1">Lorem ipsum</a></li>
+            <li><a href="#tabs-2">Phasellus nunc eros</a></li>
+            <li><a href="#tabs-3">Nam porta</a></li>
         </ul>
         <div id="tabs-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia diam eu nisl tempor lacinia. Donec interdum imperdiet leo, eget bibendum nisi euismod at. Mauris consectetur luctus ultrices. Sed id neque nec nunc aliquet fringilla et at mauris. Integer tincidunt laoreet ligula. In hac habitasse platea dictumst. Pellentesque mattis viverra tempus. Vestibulum et eleifend felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tortor odio, eleifend a pellentesque sed, vulputate eu lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ullamcorper tincidunt tortor, nec mattis lorem lacinia at. Curabitur consequat laoreet lacus sit amet tempus. Donec viverra augue placerat arcu facilisis pharetra.</p>
+			<p>Aenean ut orci risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam nec arcu quis dolor sodales tristique. Pellentesque dignissim, lacus vel porta venenatis, eros nisi bibendum nisi, tempus congue lectus elit quis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed hendrerit interdum leo, a euismod tortor luctus et. Etiam sed metus a urna ultrices condimentum. In dignissim condimentum nunc, in feugiat augue semper ut. Nullam luctus, arcu eget consequat sagittis, nulla ante vehicula quam, nec tincidunt arcu libero luctus arcu. Praesent id quam id risus imperdiet fringilla. Integer euismod pulvinar libero, hendrerit porta libero sodales scelerisque. Maecenas eleifend malesuada eros, sed viverra enim pretium id.</p>
+			<p>Phasellus vulputate malesuada quam, at accumsan velit cursus nec. Pellentesque porttitor faucibus est non aliquet. Nulla tristique pulvinar magna, at vestibulum orci ultrices ac. Pellentesque bibendum egestas mauris. Quisque bibendum eros eget tortor accumsan id consectetur augue suscipit. Suspendisse vitae augue diam. Curabitur ipsum magna, egestas ac dictum vel, convallis in mi. Morbi luctus sapien sit amet arcu tristique rutrum in id lacus. Nam sit amet neque quis massa scelerisque sagittis in a libero. Phasellus dictum elementum tempor. Cras tellus augue, elementum vel accumsan blandit, sodales a purus. Cras id dolor in lectus pretium porttitor sed ut ligula. Nam massa ligula, aliquam vitae vestibulum sed, pharetra sed magna. Proin cursus purus in felis aliquam cursus. Ut volutpat justo ac ipsum pharetra tristique. Aliquam id ligula sit amet mauris volutpat tincidunt. Quisque at quam sed nibh ultrices aliquam vitae et leo.</p>
         </div>
         <div id="tabs-2">
-            <p>Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</p>
+            <p>Phasellus nunc eros, tristique semper euismod vel, interdum eu urna. Cras luctus turpis nec ligula vestibulum posuere. Proin rhoncus mauris id libero semper tristique. Ut a augue hendrerit quam interdum facilisis ut at dolor. Fusce sed tellus et metus rhoncus sodales. Nullam blandit, lacus ut semper consectetur, elit metus fermentum nisl, a imperdiet nulla erat at enim. Praesent sagittis commodo dictum. Nulla dictum semper felis a scelerisque. Fusce sed lectus diam, eu posuere lacus. Quisque nulla nulla, elementum non pharetra eu, gravida vel mauris. Donec ac commodo felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas aliquam adipiscing pulvinar. Duis nisi eros, posuere vitae semper ut, faucibus sed orci. Cras consequat, tellus sed congue placerat, sem neque dignissim nisl, eu tempus ligula nunc facilisis justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus interdum pharetra tristique.</p>
+			<p>Quisque faucibus fermentum venenatis. Nunc eget nisi quam. Maecenas risus leo, egestas eget vulputate eget, sodales non magna. In tincidunt libero sed nisi faucibus sit amet lobortis ipsum gravida. Mauris ligula sapien, rutrum sollicitudin laoreet vitae, rutrum non nisl. Nulla aliquam, neque in volutpat malesuada, risus velit facilisis diam, vitae iaculis justo ligula id urna. Aliquam accumsan arcu nec mauris bibendum et semper leo ornare. Suspendisse suscipit, metus ut sollicitudin placerat, orci mi volutpat turpis, sit amet consequat neque dolor posuere velit. Donec eget bibendum tellus. Vivamus fringilla libero in ligula posuere quis pharetra arcu consectetur. Nunc arcu nibh, convallis id imperdiet in, malesuada id nisi. Sed sit amet mauris nulla, id vulputate augue. Duis pharetra dolor elementum velit lobortis scelerisque.</p>
         </div>
         <div id="tabs-3">
-            <p>Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</p>
+            <p>Nam porta facilisis hendrerit. Phasellus molestie purus ut urna pharetra malesuada. Aliquam tristique tincidunt felis sit amet vestibulum. Praesent porta sem sit amet tellus scelerisque sed euismod sem tincidunt. Proin interdum pellentesque luctus. In dapibus est id elit sagittis lacinia tincidunt augue aliquet. Vestibulum a eros mauris, non tempus mi. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Integer porta sodales ipsum nec euismod. Curabitur mi dolor, consectetur eu porttitor nec, adipiscing eleifend quam.</p>
+			<p>Phasellus pellentesque auctor libero in aliquam. Cras dolor turpis, ullamcorper ac tempus nec, pretium accumsan metus. Cras at arcu sapien, a accumsan erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ultrices, nulla vitae eleifend commodo, justo urna congue nulla, eu tempus nulla nibh ut tellus. Nam sollicitudin dictum elementum. Mauris hendrerit tincidunt tempus. Nulla auctor tempor nulla a ullamcorper. In venenatis placerat ligula a laoreet. Curabitur in turpis libero. Phasellus a justo risus, vel pellentesque nunc. Maecenas eu ante turpis.</p>
+			<p>Morbi id nisl odio, in bibendum augue. Ut eleifend laoreet tincidunt. Vestibulum massa nisi, feugiat sed porta non, dictum eget urna. Aenean lobortis, lacus non facilisis tincidunt, mauris urna gravida enim, id convallis ligula nibh eget felis. Etiam suscipit, velit id pulvinar porta, quam ante adipiscing augue, eget faucibus massa risus at metus. Quisque et metus erat, at suscipit metus. Pellentesque dui odio, semper at congue vel, elementum sit amet erat. Vivamus a sapien velit. Mauris convallis urna et erat hendrerit consectetur. Suspendisse sed elit vitae felis vehicula dapibus sed eu enim. Nam gravida vehicula nisl non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<p>Pellentesque libero sapien, blandit nec accumsan nec, cursus sed elit. Integer ultricies massa orci, a congue lorem. Nam lorem enim, vehicula nec auctor sed, faucibus a libero. Vestibulum porttitor, justo sed tempor auctor, metus urna pulvinar ante, at sollicitudin enim mi ac tellus. Sed pulvinar ligula ac erat euismod accumsan. Nunc a enim dolor. Morbi vel urna diam. Pellentesque convallis sapien nec erat blandit eu laoreet nisi rutrum. Praesent semper, mi quis tristique rutrum, lacus nisl suscipit lacus, eu gravida tellus nulla quis orci. Vivamus ac ligula nulla, vitae consequat orci. Suspendisse auctor condimentum imperdiet. Aenean vehicula, dui ac varius faucibus, libero quam volutpat quam, vitae pretium leo erat eget massa. Nullam sagittis sem in dui scelerisque vel euismod libero porta. Quisque varius gravida sem. Morbi viverra, tortor pharetra tempus bibendum, diam enim tempus lorem, id lobortis est magna vel nisi. Suspendisse consequat dui sit amet tellus pellentesque ultrices. Suspendisse tristique tincidunt eros, eu molestie odio hendrerit eget. Curabitur ac lectus vel urna pellentesque varius. Phasellus sodales gravida accumsan.</p>
         </div>
     </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../jquery.metroTabs.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-	$('#tabs').metroTabs();
+	// initialize
+	$('#tabs').metroTabs({
+		controllerClass: 'controller'
+	});
+	// move prev
+	$('.prev').click(function() {
+		$('#tabs').metroTabs('prev');
+	});
+	// move next
+	$('.next').click(function() {
+		$('#tabs').metroTabs('next');
+	});
 </script>
 </body>
 </html>
